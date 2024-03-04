@@ -1,1 +1,1 @@
-web: npm run start-backend && npm run start
+web: npm i && npm run build && cd Backend && npm i && node server.js
