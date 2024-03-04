@@ -9,9 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "serve -s dist",
-    "heroku-postbuild": "npm run build",
-    "start-backend": "cd Backend && npm i && node server.js"
+    "heroku-postbuild": "cd Frontend && npm install && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
