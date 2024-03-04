@@ -5,6 +5,7 @@ const { Server } = require('socket.io');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
+const path = require("path");
 
 const routes = require('./routes/routers');
 const { History, saveMessage } = require('./models/chat.js');
@@ -141,6 +142,6 @@ app.use("/", routes);
 
 const port = process.env.PORT || 4000;
 
-server.listen(PORT, () => {
+server.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
