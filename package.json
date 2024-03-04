@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node Backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "start": "cd Backend && npm i && node server.js",
+    "heroku-postbuild": "cd Frontend && npm i && npm run build"
   },
   "engines": {
     "node": ">=15.0"
