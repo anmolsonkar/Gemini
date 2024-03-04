@@ -1,1 +1,1 @@
-web: node /Backend/server.js
+web: npm i && node /Backend/server.js
